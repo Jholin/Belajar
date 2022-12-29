@@ -1,0 +1,18 @@
+Inheritance
+( sebuah elemen mewarisi "beberapa" nilai dari properti yang dimiliki parentnya )
+
+ contoh properti yang diwariskan
+	color
+	font
+	letter-spacing
+	line-height
+	list-style
+	text-align
+	text-indent
+	text-transform
+	visibility
+	white-space
+
+  inherit
+   supaya <a></a> mau mewarisi properti apapun dari orangtua-nya
+	a ( color: inherit; }

@@ -1,0 +1,119 @@
+CSS VALUE & UNIT
+    CSS VALUE
+        - integer (bisa positif/negatif)
+            contoh {
+                z-index: 1;
+                z-index: -9999;
+                order: 3;
+                grid-column-start: 2;
+                grid-row-end: -4;
+                ...
+            }
+
+        - number (bisa angka/pecahan)
+            contoh {
+                opacity: 0.8;
+                transform; scale(2.5);
+                ...
+            }
+
+        - percentage (mempresentasikan sebagian dari nilai tertentu. % selalu relative terhadap nilai lain.)
+            contoh {
+                .box-besar {
+                    width: 80%;
+                    height: 200px;
+                    background-color: salmon;
+                }
+
+                .box-besar .box-kecil {
+                    width: 50%;
+                    height: 100px;
+                    background-color: royalblue;
+                }
+            }
+
+        - dimension (number yang memiliki satuan dibelakangnya.)
+            ~ Lenght
+                kategori:
+                    -Absolute/fix
+                        satuan:
+                            ~ px 1/96 of 1 inch(96px= 1 inch)
+                            ~ pt 1/72 of 1 inch(72pt= 1 inch)
+                            ~ pc 12pt=1pc
+                            ~ cm centimeter
+                            ~ mm milimeter
+                            ~ in inches
+
+                        contoh {
+                            font-size: 12px;
+                            font-size: 12pt;
+                            font-size: 1.2pc;
+                            font-size: 0.6cm;
+                            font-size: 4mm;
+                            font-size: 0.2in;
+                        }
+                         https://alligator.io/css/css-units-explainted/
+
+
+                    -Relative
+                        relative unit :
+                            ~ %     presentase ukuran relative terhadap ukuran element parent.
+                            ~ em    relatif terhadap ukuran font yang sedang digunakan.
+                            ~ rem   relatif terhadap ukuran font "root" / <html>
+                            ~ ch    relatif terhadap lebar karakter '0' dari font yang sedang digunakan.
+                                ~ satuannya % :
+                                    ~ vh    relatif terhadap tinggi viewport (layar monitor, hp, dll).
+                                    ~ vw    relatif terhadap lebar viewport (layar monitor, hp, dll).
+                                    ~ vmin  relative terhadap dimensi terkecil sebuah viewport.
+                                    ~ vmax  relative terhadap dimensi terbesar sebuah viewport.
+
+
+
+            ~ angel (sudut)
+                satuan:
+                    - deg
+                    - rad
+                    - grad
+                    - turn
+                
+                contoh {
+                    .box {
+                        width: 100px;
+                        height: 100px;
+                        margin: 50px;
+                        background-color: salmon;
+
+                        transform: rotate(300deg);
+                        /* 1/12 */
+                        transform: rotate(0.08333333turn);
+                        /* π/6 */
+                        transform: rotate(0.523333333rad);
+                        /* 33 */
+                        transform: rotate(33.3grad);
+                    }
+                }
+
+            ~ time
+                satuan:
+                    - s/second (1s = 1000ms)
+                    - ms/milisecond (1000ms = 1s)
+
+                contoh {
+                    .box {
+                        transition: 300ms;
+                        =
+                        transition: 0.3s
+                    }
+                }
+
+            ~ resolution
+                satuan:
+                    -dpi (dot per inch)
+                    -dpcm (dot per centimeter)
+                    -dppx (dot per pixel)
+
+                contoh {
+                    @media print and (min-resolution: 300dpi) {
+                        ...
+                    }
+                }

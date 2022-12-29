@@ -1,0 +1,41 @@
+Background
+http://subtlepatterns.com
+
+
+ background-color
+  mengatur warna pada background
+
+
+
+ background-image
+  mengatur gambar yang akan digunakan pada backgound
+
+	url
+
+ backgound-position
+  mengatur posisi gambar pada backgorund
+
+	top/center/bottom left/center/right
+	top left
+	top center
+	top right
+	center left
+	center center
+	center right
+	bottom left
+	bottom center
+	bottom right
+	x% y%
+	x-pos y-pos
+
+ background-repeat
+  mengatur jenis pengulangan gambar pada background
+
+	repeat-x
+	repeat-y
+ 	no-repeat
+
+singkat:
+	background: color url() position repeat;s
+jadi
+	background: lightgreen url(bg.png) top left no-repeat;

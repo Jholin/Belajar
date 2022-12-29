@@ -1,0 +1,31 @@
+Prefix Vendor (awalan vendor/browser yang bersangkutan) sintaks khusus yang harus ditambahkan untuk beberapa property CSS3.
+
+Vendor Prefixes
+    -webkit- (Chrome, Safari, Opera versi terbaru)
+    -moz- (Firefox)
+    -ms- (Internet explorer)
+    -o- (Opera versi terdahulu)
+
+cek pada Website shouldiprefix.com, caniuse.com, http://pleeease.iamvdo.me/play/ untuk melihat browser mana yg belum support property CSS3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefix Vendor</title>
+    <style>
+        img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    
+<img src="../BorderRadius/image3.jpg" alt="">
+
+</body>
+</html>

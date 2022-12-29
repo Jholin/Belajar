@@ -1,0 +1,95 @@
+CSS Grid Terminology
+    Grid container
+        grid pembungkus 
+            contoh 
+            .container {
+                display: grid;
+            } 
+    Grid item
+        elemen didalam container yang persis 1 level
+    
+    Grid line
+        garis horizontal(kolom) atau garis vertikal(baris) yang memisahkan grid menjadi beberapa bagian dan ditantadi dengan angka.
+            jumblah line akan selalu lebih 1 dari jumblah kolom/baris nya.
+
+    Grid cell
+        perpotongan garis/kolom didalam grid.
+
+    Grid area
+        kumpulan lebih dari 1 cell yang membentuk kotak.
+
+    Grid track
+        ukuran/jarak antara 2 gridline, bisa horizontal(kolom) atau vertikal(baris), atau ukuran grid cell.
+
+    Grid gap
+        jarak grid track / cell.
+
+
+
+Explicit & Implicit Grid
+    Explicit ketika kita secara jelas menuliskan gridnya.
+
+    Implicit menentukan barisnya secara otomatis oleh gridnya.
+
+Special Function & keywords
+    repeat()
+        "menentukan ukuran dari grid track secara berulang."
+            .container {
+                display: grid;
+                grid-template-columns: repeat(9, 1fr); 
+            }
+
+            atau
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr); 
+            }
+
+    min-content & max-content
+        "menentukan seberapa besar ukuran grid track berdasarkan content pada sebuah item."
+            .container {
+                display: grid;
+                grid-template-columns: min-content | mac-content;
+            }
+
+    auto-fit & auto-fill
+    
+
+
+
+Property Grid 
+
+    Property untuk mengatur kolom dan baris
+
+        grid-template-columns & grid-template-rows
+
+            "mendefinisikan kolom/baris dengan cara menuliskan nilai dipisahkan oleh spasi.
+            Nilai merepresentasikan ukuran 'grid track' dan spasi mempresentasikan 'grid line'."
+                
+                .container {
+                    display: grid;
+                    grid-template-columns: <track-size> ... | <line-name> <track-size> ...;
+                    grid-template-rows: <track-size> ... | <line-name> <track-size> ...;
+                }
+                    ~ <track-size> : bisa berupa px, %, auto atau fr(fraction).
+                    ~ <line-name> : nama yang bisa diberikan pada track.
+
+        grid-auto-columns & grid-auto-rows
+
+            "Mengatur ukuran grid track yang tidak dituliskan pada grid-template (implicit track)."
+
+                .container {
+                    grid-auto-coluns: <track-size>;
+                    grid-auto-rows: <track-size>;
+                }
+
+        grid-auto-flow
+
+            "Mengatur penempatan item/cell pada grid track, termasuk yang ditulis secara implicit."
+        
+                .container {
+                    grid-auto-flow: row | column | row dense | columns dense;
+                }
+
+        

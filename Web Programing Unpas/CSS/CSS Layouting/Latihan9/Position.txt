@@ -1,0 +1,27 @@
+Position 
+ untuk mengubah elemen tanpa mempengaruhi elemen lainnya.
+
+
+ Position
+    static;
+        nilai default dari tiap tiap position elemen ketika tidak diberi properti position
+
+        menggunakan position selain static (non-static), anakn membuat sebuah elemen menjadi seolah-olah "berbeda-dimensi" dari elemen lainnya.
+
+        Elemen yang diberi position selain static dapat mengunakan properti seperti top, left, bottom dan right untuk mengatur posisinya.
+
+
+    relative;
+        Ketika kita menggerakan elemen dengan posisi relative (menggunakan properti top, left, bottom dan right), ruang yang ditempati elemen tsb masih ada.
+
+        ketika kita menggerakan elemen dengan posisi relative, elemen akan berkerak relative pada posisi semula nya.
+
+        jika kita memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya.
+
+    absolute;
+        Ketika kita menggerakan elemen dengan posisi absolute (menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tsb dianggap tidak ada.
+
+        Ketika kira menggerakan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi dari elemen parent-nya, selama elemen parentnya memiliki posisi yang juga non-static.
+
+    fixed;
+        Ketika kira menggerakan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap winmdow, ketika kita scroll halamannya dia akan terkunci pada posisi nya.

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <!-- Di animation ada banyak keyframe -->
+    <!-- syntax keyframe -->
+        <!--
+            @keyframes [name] {
+                from {
+                    [property-css]
+                }
+                to {
+                    [property-css]
+                }
+            } 
+        -->
+    <!-- Nilai yang bisa ditambahkan ke dalam property animation -->
+        <!-- 
+             [name]             = nama dari animasinya (wajib ada)
+             [duration]         = persis dengan transition
+             [timing-function]  = persis dengan transition
+             [delay]            = persis dengan transition
+             [iteration-count]  = <angka> | invinite (defaultnya = 1)
+             [direction]        = normal(dari awal ke akhir) | reverse(kebalikan normal) | alternate(dari awal ke akhir lalu dari akhir ke awal) | alternate-reverse(kebalikan alternate)
+             [fill-mode]        = (untuk menentukan akhir dari transisi) none | forwards | backwards | both
+             [play-state]       + running | paused
+        -->
+    <style>
+        
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            animation: AnimasiKotak 2s ease 3 alternate forwards;
+        }
+
+        @keyframes AnimasiKotak {
+            0% {
+                width: 200px;
+            }
+
+            50% {
+                height: 200px;
+            }
+
+            100% {
+                width: 500px;
+                height: 500px;
+            }            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="kotak"></div>
+
+</body>
+</html>

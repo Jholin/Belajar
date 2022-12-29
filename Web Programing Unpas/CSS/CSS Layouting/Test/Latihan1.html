@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+        .satu, .dua, .tiga {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            position: absolute;
+        }
+        .satu    {
+            background-color: pink;
+        }
+        .dua {
+            background-color: aqua;
+        }
+        .tiga {
+            background-color: lime;
+        }
+        .container {
+            width: 450px;
+            height: 450px;
+            border: 10px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+        .topbar {
+            z-index: 999999;
+            height: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            position: fixed;
+            background-color: darkblue;
+        }
+        .iklan {
+            position: fixed;
+            left: 100px;
+            right: 100px;
+            top: 100px;
+            bottom: 100px;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .close {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            font-family: arial;
+            border: 3px solid black;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            right:-15px;
+            top: -15px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="topbar"></div>
+
+<div class="container">
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</div>
+
+<div class="iklan">
+    <div class="close">x</div>
+</div>
+
+</body>
+</html>

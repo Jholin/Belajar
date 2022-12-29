@@ -1,0 +1,21 @@
+Dimensi & overflow
+
+ overflow digunakan untuk mengatur elemen yang kasusnya seperti disana.
+    value overflow 
+     visible
+        default
+
+     auto
+        semi scroll
+
+     hidden
+        disembunyikan
+
+     scroll
+        scroll tulen, tetap scroll
+
+
+ width & height
+    px
+    %
+    in, cm, mm, pt, pc

@@ -1,0 +1,57 @@
+calc
+    fungsi pada CSS, uang memungkinkan kita untuk melakukan operasi matematika/kalkulasi pada nilai dari sebuah properti.
+    
+    nilai yan bisa dikalkulasi antarana :
+        <length>
+            px, em, vw, vh.
+
+        <angle>
+            radiant, gradiant, degree.
+
+        <time>
+            second, milisecond.
+
+        <percentage>
+            %.
+
+        <number>
+            opacity, z-index.
+
+    Rumus :
+
+        property: clac(expression);
+
+    contoh:
+        width: calc(10px + 100px; = 90px.
+        width: calc(100% - 30px); = 100%-30px.
+            
+    contoh perkalian :
+        valid
+            margin: calc(10px * 3); = 30px
+        valid
+            margin: calc(3 * 10px); = 30px
+        invalid
+            margin: calc(30px * 3px); karena tidak bisa perkalian menggunakan satuan.
+
+    contoh pembagian :
+        valid
+            margin: calc(30px / 3); = 10
+        invalid
+            margin: calc(30px / 10px); karena tidak bisa pembagian menggunakan satuan.
+        tidak bisa dibagi 0
+            margin: calc(30px / 0);
+
+    kita bisa kasih calc ke :
+        font-size:  calc(3vw + 2px);
+        width:      calc(100% - 20px);
+        height:     calc(100vh - 20px);
+        padding:    calc(1vw + 5px);
+
+    kita bisa menggunakan calc seperti Nesting :
+            width: calc(calc(100% / 3) - calc(1rem * 2));
+            
+        atau
+            width: calc((100% / 3) - (1rem * 2));
+
+        calc sudah tau order of operation
+            width: calc(100% / 3 - 1rem * 2);

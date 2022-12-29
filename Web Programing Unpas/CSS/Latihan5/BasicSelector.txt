@@ -1,0 +1,28 @@
+Basic Selector ( digunakan pada css untuk mengenali sebuah elemen html yang akan diberi style )
+
+ elemen HTML
+	( body, h1, h2, h3, h4... )
+	(ul li a, ol li a)
+
+ id
+selector buatan kita sendiri
+  *Sebuah elemen HTML hanya boleh mempunyai 1 id.
+  *Setiap halaman hanya boleh memilikin 1 elemen dengan id tsb.
+  *Dapat digunakan sebagai penanda halaman untuk link.
+  *Digunakan juga untuk javascript.
+  *Sebaiknya tidak digunakan untuk CSS (lebih baik gunakan class).
+
+	<p id="x">
+	#x
+
+ class
+selector buatan kita sendiri
+
+	<p class="x y">
+	.x
+	.y
+	.x y
+	p.y
+
+ complex selector
+	

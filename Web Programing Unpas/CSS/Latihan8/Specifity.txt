@@ -1,0 +1,18 @@
+Specificity
+( Setiap deklarasi css (selektor) memiliki berat yang berbeda.
+ Berat tersebut menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selector.
+
+  Urutan spesifik di css
+	HTML < class < id < inline
+
+jika 
+	<p>
+diberi css
+	 p { color : red; }
+	 p { color : blue; }
+maka warna nya akan menjadi biru.
+ hal ini terjadi karena value/massa p merah= p biru,
+jadi p merah tertimpa p biru.
+
+kalkulator specificity
+ http://s[ecificity.keegan.st

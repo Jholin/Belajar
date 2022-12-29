@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face</title>
+
+    <!-- Cara Pertama bisa menggunakan font yang tersedia di Os masing-masing -->
+
+    <!-- Cara kedua adalah, menggunakan font dari .font.google.com versi online -->
+
+        <!-- Ini salinan dari fonts.google.com -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+        <!-- Ini nama font nya salinan dari fonts.google.com -->
+        <!-- <style>
+            h1 {
+                margin-top: 25vh;
+                text-align: center;
+                font-size: 10em;
+                font-family: 'Patrick Hand', cursive;
+            }
+        </style> -->
+
+    <!-- Cara ketiga adalah, jika font kita dari fonts.google.com dirasa kurang untuk web kita dan kita ingin menambahkan font downloadan ke dalam web kita -->
+
+        <!-- langkah pertama siapkan font terlebih dahulu font dari www.fontsquirrel.com -->
+
+        <!-- Tuliskan syntax @font-face -->
+
+        <style>
+            @font-face {
+                font-family: "Alex Brush";
+                src: url('AlexBrush-Regular.ttf') format('truetype');
+            }
+
+        /* Kalau bisa menggunakan Woff, kita bisa mengubah font type lain ke woff dengan 'Web Font Generator' di fontsquirrel.com */
+            @font-face {
+            font-family: 'open_sansregular';
+            src: url('OpenSans-Regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            }
+
+            h1 {
+                margin-top: 20vh;
+                text-align: center;
+                font-size: 15em;
+                font-family: "open_sansregular", Arial;
+            }
+        </style>
+
+
+</head>
+<body>
+    
+<h1>Hello World!</h1>
+
+</body>
+</html>

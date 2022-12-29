@@ -1,0 +1,92 @@
+Box Model: Padding, Border & Box Sizing
+
+ margin
+  area transparan di sekitar kotak (diluar border).
+
+ padding
+  area transparan di dalam kotak (antara content dan border).
+
+    padding tidak bisa negatif.
+    padding tiak bisa auto.
+    hati-hati padding dapat mempengaruhi ukuran kotak.
+
+ border
+  batas disekeliling content dan padding
+  border :
+    width (px)
+    style (solid, dotted, dashed, double)
+    color (terserah);
+  kaya margin border bisa diatur di sisi-sisi nya (border-top/right/bottom/left).
+  kaya padding border juga menambahkan ukuran kotaknya.
+  
+ content
+  konten sebenarnya didalam box, bisa berupa teks atau gambar.
+
+ box sizing
+  mengubah size box/kotak
+
+    box sizing: border box;
+        mengubah lebar dari kotak menjadi tetap, berapapun padding dan border yg kita berikan.
+
+
+Reset
+ Elemen elemen pada HTML terkadang memiliki margin sendiri
+ seperti
+  body
+  h1-h6
+  p
+  dll
+
+ untuk mereset secara praktis bisa menggunakan 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+ pada css.
+ tetapi cara ini juga tidak baik, karena kita memberikan margin dan padding secara universal.
+
+ ini adala syntax untuk mereset yang dibuat oleh Meyer.
+
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

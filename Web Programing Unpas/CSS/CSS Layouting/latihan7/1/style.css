@@ -1,0 +1,20 @@
+.container {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+
+.satu, .dua, .tiga {
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    float: left;
+    width: 200px;
+}
+
+.clear {
+    clear: left;
+}

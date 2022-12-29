@@ -1,0 +1,10 @@
+.container {
+    background-color: #eee;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: calc(7vw + 24px);
+}

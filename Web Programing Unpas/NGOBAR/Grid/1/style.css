@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 16px;
+    font-family:  'Oswald', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+/* Container */
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+/* Heading */
+header {
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    display: block;
+    padding: 50px;
+}
+
+.hero > * {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(../img/image4.jpg);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(../img/image3.jpg);
+    background-size: cover;
+}
+
+.features .price {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+/* NAV */
+
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.menu .brand {
+    color: #333;
+    font-size: 1.3em;
+}
+
+.menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* Services */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    text-align: center;
+    background-color: white;
+    border: solid 1px #aaa;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.services .icon {
+    font-size: 3em;
+}
+
+.service h3 {
+    font-size: 1.5em;
+}
+
+.service p {
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}

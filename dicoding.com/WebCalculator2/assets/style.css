@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #eee;
+    padding: 2em;
+}
+
+.display {
+    background-color: #444;
+    padding:  30px;
+}
+
+.row {
+    display: flex;
+}
+
+.button {
+    width: 25%;
+    padding: 50px 0;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.equals {
+    width: 50%;
+}
+

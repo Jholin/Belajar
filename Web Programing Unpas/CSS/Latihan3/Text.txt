@@ -1,0 +1,53 @@
+Text Styling
+
+ color
+  memberi warna pada tulisan
+
+	nama warna  ( red, lightseagreen, royalblue, ... )
+	hecadecimal ( #ff0000, #20b2aa, #4169el, ... ) 
+	rgb ( rgb(255, 0, 0), rgb(32, 178, 170), rgb(65, 105, 225), ...)
+
+	[ https://www.w3schools.com/cssref/css_colors.asp ]
+	[ www.colorpicker.com ]
+
+ text-align
+  mengatur format paragraf/teks
+
+	left ( rata kiri )
+	right ( rata kanan )
+	center ( rata tengah )
+	justtify ( rata kiri kanan )
+
+ text-indent
+  memberi indentasi pada paragraf/teks
+
+	px
+	%
+
+ text-decoration 
+  mengatur dekorasi pada teks
+
+	none ( biasanya digunakan untuk menghilangkan underline pada sebuah link )
+	underline ( garis bawah )
+	overline ( garis diatas )
+	line-through ( garis yg mecoret )
+
+ text-transform
+  mengubah jenis huruf menjadi huruf besar, kecil/kapital
+
+	none
+	lowercase ( memaksa mengubah menjadi huruf kecil semua )
+	uppercase ( memaksa mengubah menjadi huruf besar semua )
+	capitalize ( memaksa mengubah menjadu huruf kapital )
+
+ letter-spacing
+  mengatur spasi antar huruf
+
+	normal
+	px
+
+ word-spacing
+  mengatur spasi antar kata
+
+	normal
+	px

@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    background-color: #ddd;
+    padding-bottom: 1000px;
+}
+
+.container-satu {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.content {
+    order: 2;
+    flex: 3;
+}
+
+.content h1 
+
+.bagian-kiri {
+    order: 1;
+    flex: 1;
+}
+
+.bagian-kanan {
+    order: 3;
+    flex: 1;
+}
+
+
+/* bagian 2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layanan {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30%;
+
+}
+
+.layanan.satu {
+    background-color: skyblue;
+
+}
+.layanan.dua {
+    background-color: limegreen;
+
+}
+.layanan.tiga {
+    background-color: salmon;
+
+}

@@ -1,0 +1,49 @@
+Box Model: margin
+
+ cara pakai
+    margin-left
+    margin-top
+    margin-bottom
+    margin-right
+    margin
+
+ overlapping margin
+  margin vertikal tidak saling menambahkan (yang dipakai margin yang terbesar).
+  margin horizontal saling menambahkan.
+  nilai margin bisa -(negatif)
+
+ negatif margin
+  margin negatif membuat elemen dibawahnya terbawa.
+
+ auto
+    margin: auto;
+  membuat margin berada ditengah-tengah parent-nya
+
+ shorthand
+
+     margin: 50px;
+    (
+        50px ke semua sisi
+    ).
+
+     margin: 50px 100px; 
+    (
+        50px = atas & bawah
+        100px = kiri & kanan
+    ).
+
+     margin: 30px 50px 40px
+    (
+        30px = atas
+        50px = kiri & kanan
+        40px = bawah
+    )
+
+    margin: 10px 20px 30px 40px;
+     searah jarum jam.
+    (
+        10px = atas
+        20px = kanan
+        30px = bawah
+        40px = kiri 
+    )

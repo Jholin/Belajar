@@ -1,0 +1,51 @@
+Display
+
+ <div>&<span>
+  tag <div>&<span> tidak memiliki arti apapun, keduanya digunakan untuk mengelompokkan
+  tag-tag HTML dan memberikan informasi pada tag-tag tsb.
+
+ <div></div>
+    div { display: block; }
+
+ <span></span>
+    span { display: inline; }
+
+
+  "Setiap tag pada HTML berada dalam sebuah kotak.
+  properti display pada CSS mengatur prilaku dari kotak tsb."
+
+  "Setiap tag pada HTML memiliki nilai default untuk properti display.
+  tetapi kita juga dapat mengubah prilaku dari tag tsb dengan mengganti value-nya."
+
+ display
+
+    inline
+     Elemen HTML secara default tidak menambahkan baris baru ketika dibuat.
+     Lebar dan tinggi elemennya sebesar konten yang ada diladamnya.
+     Kita tidak dapat mengatur tinggi dan lebar dari elemen inline.
+     Margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal.
+
+ elemen default dari display: inline;
+        b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea ...
+     hanya img yang displaynya inline yang bisa di atur widh&height nya.
+
+    inline-block
+     Tidak ada elemen yang secara default memiliki properti display: inline-block;
+     Kita harus ubah secara manual properti tsb.
+     Prilaku dasarnya sama seperti inline
+
+    block
+     Elemen HTML yang secara default menambahkan baris baru ketika dibuat.
+     Jika tidak diatur lebarnya, maka lebar default dari elemen block akan memenuhi lebar dari browser/parent-nya.
+     Kita dapat mengaturtinggi dan lebar dari elemen block.
+     Di dalam elemen block, kita dapat menyimpan tag dengan elemen inline, inline-block atau bahkan elemen block lagi.
+
+ elemen default dari display: block;
+        h1-h6, p, ol, ul, li, form, hr, div, ...
+
+
+    none
+     untuk menghapus suatu display dari web.
+
+     https://www.slideshare.net/sandhikagalih/css-layouting-1-display
+  

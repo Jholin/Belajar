@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 1</title>
+    <!-- Transition memungkinkan kita dapat mengubah nilai dari property html secara halus -->
+    <!-- Perbedaan transition & animation -->
+        <!-- sama saja, yang membedakan keadaan awal dan akhir -->
+            <!-- transisi : [property] <durasi> [fungsi] [delay]; -->
+                <!-- durasi(wajib)(s/ms) -->
+                <!-- property(menentukan apa saja yang ingin dilakukan transisi)('all', <nama property>, none) -->
+                <!-- fungsi(timming funcion pergerakan apa yang akan kalian lakukan pada saat menggunakan transisi)
+                    ('ease', ease-in(pelan ke ngebut), ease-out, ease-in-out, linear, cubic-bezier(w,x,y,z) ) -->
+                <!-- delay(memberikan delay/waktu tunggu)(s/ms) -->
+
+
+            <!-- animatable properties -->
+                    <!-- 
+                        background-color        top left bottom right
+                        background-position     margin padding
+                        background-size         width-height
+                        border                  opacity
+                        color                   transform
+                        filter                  word-spacing
+                        font-size               letter-spacing
+                        line-height             ...
+                     -->
+
+            <!-- non-animatable properties -->
+                     <!-- 
+                         font-family
+                         display ( block | inline | grid )
+                         position ( absolute | relative )
+                         ...
+                      -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 900px;
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px 0;
+        }
+        .kotak1 {transition: margin-left 3s, transform 3s 2s, background-color 500ms 3s;}
+        /* .kotak2 {transition: all 3s ease-in;}
+        .kotak3 {transition: all 3s ease-out;}
+        .kotak4 {transition: all 3s ease-in-out;}
+        .kotak5 {transition: all 3s linear;}
+        .kotak6 {transition: all 3s cubic-bezier(0.54,-0.65, 0.47, 1.74);} */
+
+        /* Jika container saya ahover, kotak didalamnya akan transisi */
+        .container:hover .kotak {
+            transform: rotate(720deg);
+            margin-left: 800px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak kotak1"></div>       
+        <!-- <div class="kotak kotak2">ease-in</div>    
+        <div class="kotak kotak3">ease-out</div>   
+        <div class="kotak kotak4">ease-in-out</div>   
+        <div class="kotak kotak5">linear</div>   
+        <div class="kotak kotak6">cubic-bezier</div>  -->
+    </div>
+</body>
+</html>

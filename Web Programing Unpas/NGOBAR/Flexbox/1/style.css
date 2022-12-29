@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: deepskyblue;
+}
+
+nav .logo {
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    color: deepskyblue;
+    list-style: none;
+    justify-content: space-between;
+    width: 50%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: deepskyblue;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}

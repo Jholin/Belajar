@@ -1,0 +1,74 @@
+Font Styling
+
+
+Properti Font CSS
+	font-family
+	 (mengatur jenis font yang akan digunakan)
+
+	 	nama font :
+	 	body { font-famly: arial, verdana, sans-serif; }
+		untuk ini tergantung resource font pada sistem oprasi user.
+
+	 	generic family
+		p { font-family: "Times New Roman", serif; }
+
+
+
+	font-size
+	 (mengatur ukuran font)
+	
+		Px (pixel)
+		%  (persen)
+		em (?)
+
+
+
+	font-weight
+	 (mengatur ketebalan font)
+		
+		lighter
+		normal
+		100-900
+		bold
+		bolder
+
+
+	font-variant
+	 (mengubah font menjadi small caps)
+
+		normal
+		small-caps	
+
+
+	font-style
+	 (mengubah font menjadi bercetak miring)
+
+		normal
+		italic
+		oblique
+
+
+	line-height
+	 (mengatur spasi antar baris)
+
+		normal
+		px
+		em
+
+CSS font :
+	Shorthand / singkatan
+	body { 
+		font-style: italic;
+		font-variant: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 18px;
+		font family: helvetica, arial, sans-serif;
+	      }
+
+jadi
+
+	body {
+		font: italic normal bold 16px/18px helvetica, arial, sans-serif
+	     }
+	(urutannya harus sesuai, font-style (optional), font-variant (optional), font-weight (optional), font-size (wajib) /line-height (optional), font-family (wajib) )
